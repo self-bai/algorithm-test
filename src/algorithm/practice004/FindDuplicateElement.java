@@ -18,7 +18,7 @@ public class FindDuplicateElement {
     }
 
     /**
-     * 普通方式，时间复杂度O方
+     * 普通方式，时间复杂度O(n*n)
      *
      * @param arr 范围数组
      */
@@ -36,6 +36,8 @@ public class FindDuplicateElement {
     }
 
     /**
+     * 以空间换时间，时间复杂度为0(n)
+     *
      * @param arr 范围数组
      */
     private static void findDuplicate2(int[] arr) {
