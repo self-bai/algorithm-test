@@ -25,7 +25,6 @@ public class FindDuplicateElement {
     private static void findDuplicate1(int[] arr) {
         System.out.print("范围数组中重复的数字有：");
         for (int index = 0; index < arr.length; index++) {
-            boolean isDuplicate = false;
             for (int key = 0; key < arr.length && key != index; key++) {
                 if (arr[key] == arr[index]) {
                     System.out.print(arr[index] + "、");
