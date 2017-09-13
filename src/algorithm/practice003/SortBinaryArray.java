@@ -7,7 +7,7 @@ package algorithm.practice003;
 public class SortBinaryArray {
     public static void main(String[] args) {
         int[] arr = {1, 0, 0, 0, 1, 1, 0, 1, 1, 0, 1};
-        sortBinaryArray1(arr);
+//        sortBinaryArray1(arr);
         sortBinaryArray2(arr);
     }
 
@@ -36,9 +36,9 @@ public class SortBinaryArray {
         int key0 = 0;   //记录当前二进制0写到的位置
         for (int index = 0; index < arr.length; index++) {
             if (arr[index] < pivot) { //如果这个位置的二进制为0
-                int tmp = arr[index];
-                arr[index] = arr[key0];
-                arr[key0] = tmp;
+                int tmp = arr[key0];
+                arr[key0] = arr[index];
+                arr[index] = tmp;
                 key0++;
             }
         }
